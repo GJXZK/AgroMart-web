@@ -1,6 +1,5 @@
 // 重写axios
 import axios from 'axios';
-// import vuex from '../store/index';
 import { Message } from '@arco-design/web-vue';
 
 // 该项目所有请求均为 get请求

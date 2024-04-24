@@ -3,16 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', redirect: 'discover' },
+    { path: '/', redirect: 'commendpage' },
     {
-      path: '/discover',
-      name: 'discover',
-      component: () => import('@/views/discover/index.vue')
-    },
-    {
-      path: '/video',
-      name: 'video',
-      component: () => import('@/views/videopage/index.vue')
+      path: '/commendpage',
+      name: 'commendpage',
+      component: () => import('@/views/commendPage/index.vue')
     },
     {
       path: '/search',
