@@ -12,7 +12,7 @@ let gotoSearchPage= ()=>{
     <!-- logo -->
     <div class="flex h-120px">
       <div class="w-400px h-120px flex justify-center items-center">
-        <img src="@\assets\img\a1917f025ce14a84b67ea3565438adfd.gif" alt="" />
+        <img class="w-60%" src="@\assets\img\logo.png" alt="" />
       </div>
     </div>
     <!-- search other -->
@@ -29,24 +29,26 @@ let gotoSearchPage= ()=>{
             @press-enter="gotoSearchPage()"
           >
             <template #append>
-              <icon-search />
+              <icon-search size="20px"/>
             </template>
           </a-input>
         </div>
         <!-- 推荐 -->
         <div class="flex justify-items-start">
           <p>823一站通</p>
-          <p>823一站通</p>
-          <p>823一站通</p>
+          <p class="ml-10px">823一站通</p>
+          <p class="ml-10px">823一站通</p>
         </div>
       </div>
       <!-- 购物车 -->
       <div>
-        <a-button :style="{ width: '120px', height: '50px' }">
+        <a-button :style="{ width: '120px', height: '50px' }" type="outline" status="danger">
           <template #icon>
-            <icon-delete size="20px" />
+            <img class="w-60% mr-10px" src="@\assets\img\cart.png" alt="">
           </template>
-          <template #default>购物车</template>
+          <template #default>
+            <p class="text-17px">购物车</p>
+          </template>
         </a-button>
       </div>
       <!-- 广告 -->
