@@ -13,7 +13,7 @@ const RouterViewStyle = computed(() => {
 <template>
   <homeHeader></homeHeader>
   <div class="">
-    <div :style="RouterViewStyle" class="top-70px">
+    <div :style="RouterViewStyle" class="">
       <RouterView />
     </div>
     

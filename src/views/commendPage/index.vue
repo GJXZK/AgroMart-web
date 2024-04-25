@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useRoute, useRouter } from 'vue-router'
+import mainHeader from '@/views/commendPage/commendPageChidren/mainHeader.vue'
 const route = useRoute()
 const router = useRouter()
   const routerPush = (path: string) => {
@@ -9,7 +10,6 @@ const router = useRouter()
 }
 </script>
 <template>
-  首页
-  <p @click="routerPush('/search')">搜索</p>
+  <mainHeader></mainHeader>
 </template>
 <style scoped></style>
