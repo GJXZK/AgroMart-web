@@ -3,7 +3,6 @@
 import category from '@/components/category.vue';
 import { onMounted, ref } from 'vue';
 import recommendApi from '@/api/recommendApi';
-import type { BannerDto } from '@/model/discover';
 
 // Image array
 const images = [
@@ -13,7 +12,7 @@ const images = [
 ];
 
 // Asynchronous function to fetch banners with error handling
-const getBannerC = async () => {
+const getBannerList = async () => {
   try {
     let result = await recommendApi.getBannners();
     console.log(result);
@@ -24,7 +23,7 @@ const getBannerC = async () => {
 
 // Fetch banners when component is mounted
 onMounted(() => {
-  getBannerC();
+  getBannerList();
 });
 
 </script>
