@@ -3,11 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', redirect: 'commendpage' },
+    { path: '/', redirect: 'recommendpage' },
     {
-      path: '/commendpage',
+      path: '/recommendpage',
       name: 'commendpage',
-      component: () => import('@/views/commendPage/index.vue')
+      component: () => import('@/views/recommendPage/index.vue')
     },
     {
       path: '/search',

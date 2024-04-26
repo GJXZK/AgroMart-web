@@ -7,13 +7,17 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Category: typeof import('./src/components/category.vue')['default']
     Form: typeof import('./src/components/login/form.vue')['default']
     FormLogin: typeof import('./src/components/login/formLogin.vue')['default']
     HomeFooter: typeof import('./src/components/HomePage/home-footer.vue')['default']
-    HomeHeader: typeof import('./src/components/HomePage/home-header.vue')['default']
+    HomeHeader: typeof import('./src/components/home-header.vue')['default']
     HomeSidebar: typeof import('./src/components/HomePage/home-sidebar.vue')['default']
+    HotComment: typeof import('./src/components/hotComment.vue')['default']
+    HotRecommend: typeof import('./src/components/hotRecommend.vue')['default']
     Login: typeof import('./src/components/login/index.vue')['default']
     LoginQr: typeof import('./src/components/Login/login-qr.vue')['default']
+    MainHeader: typeof import('./src/components/mainHeader.vue')['default']
     QrCodeLogin: typeof import('./src/components/Login/components/qrCodeLogin/index.vue')['default']
     Qrform: typeof import('./src/components/login/Qrform.vue')['default']
     Qrimg: typeof import('./src/components/login/Qrimg.vue')['default']

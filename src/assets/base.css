@@ -74,3 +74,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.w{
+  width:1200px
+}
+menu{
+  padding: 0 !important;
+}
+.arco-popover-popup-content{
+  padding: 0 !important;
+}
