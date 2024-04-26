@@ -6,8 +6,8 @@ import { Message } from '@arco-design/web-vue';
 export function request(url:string, params?:string) {
   // 请求超过30秒则判定为超时
   const instance = axios.create({
-    // baseURL: '/api',
-    baseURL:'http://www.codeman.ink:3000',
+    baseURL: '/api',
+    // baseURL:'http://120.46.179.180:8085',
     timeout: 30000,
     withCredentials: true,
   });
